@@ -1,6 +1,31 @@
 # Crawdy
 Lightweight web crawler made in Java, designed with extensibility and testability in mind.
 
+## How to include it in your project
+At the moment, this project is hosted on GitHub and not on Maven Central. In your `pom.xml`, you must add the GitHub repository as follows:
+
+```xml
+<repositories>
+    <repository>
+        <id>crawdy-mvn-repo</id>
+        <url>https://raw.github.com/alwal12/crawdy/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+```
+
+Then, you simply add the dependency as follows:
+```xml
+<dependency>
+    <groupId>ca.nexapp</groupId>
+    <artifactId>crawdy</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
 ## How to use it
 Basically, you declare a `WebCrawler` and you're ready to go. The `WebCrawler` use proxies in order to stay anonymous, so you need to provide a repository implementation to it. I've made default implementations to help you out.
 
