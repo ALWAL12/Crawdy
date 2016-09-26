@@ -8,9 +8,9 @@ import ca.nexapp.crawdy.domain.proxies.ProxyRepository;
 import ca.nexapp.crawdy.domain.proxies.ProxyServer;
 import ca.nexapp.crawdy.domain.proxies.pickers.ProxyPicker;
 
-public class JsoupRadioCrawler extends WebCrawler {
+public class JsoupWebCrawler extends WebCrawler {
 
-    public JsoupRadioCrawler(ProxyRepository proxyRepository, ProxyPicker proxyPicker) {
+    public JsoupWebCrawler(ProxyRepository proxyRepository, ProxyPicker proxyPicker) {
         super(proxyRepository, proxyPicker);
     }
 
