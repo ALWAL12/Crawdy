@@ -30,7 +30,7 @@ Then, you simply add the dependency as follows:
 Basically, you declare a `WebCrawler` and you're ready to go. The `WebCrawler` use proxies in order to stay anonymous, so you need to provide a repository implementation to it. I've made default implementations to help you out.
 
 ```java
-ProxyRepository proxyRepository = new ProxyPropertiesRepository("my/path/to/proxy.properties"); // See details below
+ProxyRepository proxyRepository = new ProxyPropertiesRepository("my/path/to/proxy.properties"); // See Appendix below
 ProxyPicker proxyPicker = new RoundRobinProxyPicker(); // You can always create a new algorithm
 WebCrawler webCrawler = new JsoupWebCrawler(proxyRepository, proxyPicker);
 
